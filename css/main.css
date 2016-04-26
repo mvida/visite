@@ -1,0 +1,165 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+} /* Заполнение форм */
+
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid, /* Стили поля, по цветам на CSS */
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+i {
+	padding: 0px;
+}
+.container {
+	width: 50%;
+	padding-top: 10px;
+}
+.maine_mnu {
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	border-radius: 4px;
+}
+.maine_mnu a {
+	color: #ccc;
+	padding: 1px 82.4px;
+	display: block;
+	-webkit-transition: all .20s;
+	-o-transition: all .20s;
+	transition: all .20s;
+	font-family: "RobotoBold";
+}
+.maine_mnu ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.maine_mnu a:hover {
+	border-radius: 4px;
+	background-color: #444;
+}
+.maine_mnu {
+	background: #555;
+}
+.maine_mnu ul li {
+	display: inline-block;
+}
+.slider_container {
+	float: center;
+}
+.slide_item {
+	padding-left: 20%;
+	padding-top: 5%;
+}
+.footer .square {
+	
+	width: 900px;
+	height: 140px;
+	background: #555;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+ .square h4 {
+ 	font-family: "RobotoLight";
+	text-align: center;
+	color: #ddd;
+	text-align: justify;
+	line-height: 110%;
+}
+.square {
+	margin-bottom: 1px;
+	width: 900px;
+	height: 340px;
+	background: #555;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.half {
+  width: 100%;
+}
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label {
+  border-radius: 5px;
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #999;
+  font-family: "RobotoLight";
+  line-height: 3;
+  cursor: pointer;
+}
+.tab-content {
+  font-family: "RobotoLight";
+  border-radius: 5px;
+  max-height: 0;
+  overflow: hidden;
+  background: #555;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+}
+.tab-content p {
+  margin: 1em;
+}
+/* :checked */
+input:checked ~ .tab-content {
+  max-height: 10em;
+}
+/* Icon */
+label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .25s;
+  -o-transition: all .25s;
+  transition: all .25s;
+}
+input[type=checkbox] + label::after {
+  content: "\2795";
+}
+input[type=radio] + label::after {
+  content: "\25BC";
+}
+input[type=checkbox]:checked + label::after {
+  transform: rotate(360deg);
+}
+input[type=radio]:checked + label::after {
+  transform: rotateX(90deg);
+}
