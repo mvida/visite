@@ -76,7 +76,7 @@ i {
 	width: 900px;
 	height: 140px;
 	background: #555;
-	border-radius: 5px;
+	border-radius: 20px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
  .square h4 {
